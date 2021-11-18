@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url("10.jpg");
+            background-size: 100%;
+        }
+        .wrapper{
+            margin: 10% auto;
+            padding: 2px;
+            width: 70%;
+            max-width: 300px;
+            height: 70%;
+            min-height: 350px;
+            background: #f1f0f0;
+            border-radius: 10px;
+        }
+        .wrapper form{
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .center{
+            text-align: center;
+            padding: 0 0 1em 0;
+        }
+        .field{
+            display: flex;
+            align-items: flex-end;
+        }
+        .field label{
+            flex-grow: 0;
+        }
+        .field input{
+            flex-grow: 0;
+            margin: 1em .5em;
+            width: 100%;
+            font-size: 16px ;
+            padding: 5px;
+        }
+        #sign-in{
+            color: #ffffff;
+            background: cornflowerblue;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .forgot,
+        .signup_link{
+            margin: .5em;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<li><a href="restau.html">Home</a></li>
+
+<div class="wrapper">
+    <div class="center">
+        <h2>Login</h2>
+    </div>
+    <form action="#" class="cred_01">
+        <div class="field">
+            <input type="text" id="username" placeholder="Enter username" required>
+            <label for="username"></label>
+        </div>
+        <div class="field">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <label for="password"></label>
+        </div>
+        <div class="forgot">Forgot Password?</div>
+        <input type="submit" value="Sign in" id="sign-in">
+        <div class="signup_link">
+            Not a member? <a href="#">Sign Up</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
